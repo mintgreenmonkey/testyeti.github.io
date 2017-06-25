@@ -1,0 +1,28 @@
+name: Joseph Ward
+url: http://www.mintgreenmonkey.com
+description: Joseph Ward's homepage
+permalink: /blog/:title
+markdown: kramdown
+lsi: true
+include: [".well-known"]
+exclude: [
+  Gemfile, Gemfile.lock, nginx.conf, CNAME, nginx.common.conf, README.md,
+  post-receive.sh
+]
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      toc: true
+
+sass:
+  style: :compressed
+disqus: mint-green-monkey
